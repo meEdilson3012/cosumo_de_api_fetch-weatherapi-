@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clima.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="card-busca" >
+            <input class="input_city" type="text" placeholder="Busque aqui" >
+            <button class="buscar">
+                <span class="material-symbols-outlined">
+                    location_searching
+                    </span>
+            </button>
+            
+        </div>
+        <div class="card-erro">
+            <p >Não foi possivel encontrar as condições climáticas da cidade <span class="erro_msg"></span></p>
+            <img src="web.png" alt="">
+        </div>
+        <div class="card-inf">
+                <h1 class="cidade"></h1>
+                <p class="data"></p>
+           <img  class="icon" src="cloudy.png" alt="">
+            <h3 class="descricao">Nublado</h3>
+            <h1 class="temperatura">24</h1>
+            <div class="inf-bass">
+                <div>
+                    <span class="material-symbols-outlined">
+                        thermometer_gain
+                        </span>
+                    <p >Max</p>
+                    <h4 class="max">valor</h4>
+                </div>
+
+                <div>
+                    <span class="material-symbols-outlined">
+                        thermometer_minus
+                        </span>
+                    <p >Min</p>
+                    <h4 class="min">valor</h4>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        air
+                        </span>
+                    <p >Vento</p>
+                    <h4 class="vento">valor</h4>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">
+                        humidity_high
+                        </span>
+                    <p>Humidade</p>
+                    <h4  class="humidade">valor</h4>
+                </div>
+            </div>
+        </div>
+        <p class="">&copy;DEV_ED</p>
+    </div>
+    <script src="clima.js"></script>
+
+</body>
+</html>
